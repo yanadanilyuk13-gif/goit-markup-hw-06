@@ -320,21 +320,29 @@ body {
     color:#2e2f42;
 }
 .title-3 {
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 20px;
 
-    line-height: 1.11;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2E2F42;
 }
 p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
 
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+.features-title {
+    font-weight: 700;
+    font-size: 36px;
+
+    line-height: 1.11;
+}
+.features-text {
+    font-weight: 500;
 }
 @media screen and (min-width: 768px) {
     .features-item {
@@ -347,9 +355,6 @@ p {
     }
     .features-list {
         flex: 1 1 calc((100% - 24px) / 2);
-    }
-    .features-title {
-        text-align: left;
     }
 }
 
@@ -366,6 +371,15 @@ p {
     .features-list {
         flex: 1 1 calc((100% - 72px) / 4);
     }
+    .features-text {
+        font-weight: 400;
+    }
+    .features-title {
+        font-weight: 500;
+        font-size: 20px;
+
+        line-height: 1.2;
+    }
     .icon-border { 
         display: flex;
         align-items: center;
@@ -381,23 +395,154 @@ p {
     .title-3 {
         font-weight: 500;
         font-size:20px;
-
+    
         line-height:1.2;
-    }
-    p {
-        font-weight: 400;
     }
 }
 
 /*SECTION TEAM*/
+.images-container {
+    padding: 0 28px;
+}
+.team {
+    padding: 96px 0;
+    background-color:#f4f4fd;
+}
+.team-item {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+.team-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+    border-radius: 0 0 4px 4px;
+    max-width: 100%;
 
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #ffffff;
+}
+.team-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
 
+    padding: 32px 16px;
+}
+.social-icons-item { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 24px
+} 
+.soc-icons-list { 
+    width: calc((100% - 72px) / 4);
+}
+.icons-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    fill: #f4f4fd; 
+    background-color: #4d5ae5; 
+    border-radius: 50%; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icons-button:hover, .icons-button:focus {
+    background-color: #404bbf; 
+}
+@media screen and (min-width: 768px) {
+    .images-container {
+        padding: 0 108px;
+    }
+    .team-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+        max-width: 100%;
+        gap: 64px 24px;
+    }
+    .team-list {
+        width: calc((100% - 24px) / 2);
+    }
+}
+@media screen and (min-width:1158px) {
+    .images-container {
+        padding: 0 15px;  
+    }
+    .team {
+        padding: 120px 0;
+    }
+    .team-item {
+        gap: 24px;
+    }
+    .team-list {
+        width: calc((100% - 72px) / 4);
+    }
+}
 
+/*SECTION PORTFOLIO*/
+.portfolio {
+    padding: 96px 0;
+    background-color: #ffffff;
+}
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.portfolio-list {
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-list:hover,
+.portfolio-list:focus {
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.img-content-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.fon-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    border: 1px solid #4d5ae5;
+    background-color: #4d5ae5;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+.portfolio-list:hover .fon-content,
+.portfolio-list:focus .fon-content {
+    transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
 
-
-
-
+}
+@media screen and (min-width:1158px) {
+    .portfolio {
+        padding: 120px 0;
+}
+}
 /*mobile menu*/
 .mobile-menu {
     position: fixed;
