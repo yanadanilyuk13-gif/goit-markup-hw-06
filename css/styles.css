@@ -349,8 +349,7 @@ p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-       
-        max-width: 768px;
+    
         gap: 72px 24px;
     }
     .features-list {
@@ -393,7 +392,6 @@ p {
         gap: 24px;
         width: 264px;
         height: 112px;
-        margin-bottom: 8px;
     }
     .title-3 {
         font-weight: 500;
