@@ -721,13 +721,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
     .footer-container {
-    padding-left: 108px;
-    }
-    .footer-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
+
     }
     .text {
         max-width: 264px;
@@ -765,7 +763,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width:1158px) {
     .footer-container {
-     padding: 0 16px;
+        align-items: baseline;
     }  
     .footer {
         padding: 100px 0;
@@ -890,9 +888,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-soc-icons-item { 
     display: flex;
-    align-items: center; 
-    justify-content: center;
-    gap: 40px
+    gap: 40px;
 }
 .mob-soc-icons-list {
   width: calc((100% - 120px) / 4);  
